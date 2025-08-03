@@ -8,18 +8,25 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 9001;
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://127.0.0.1:3000'],
+  credentials: true
+}));
 app.use(express.json());
 
 const users = [
   {
     id: 1,
-    username: 'admin',
-    passwordHash: '$2b$10$g5X4osqbn8I14WLd2J.QseAJYzmRFqRW.d/3b28hc7SLpxbIVO1fq'
+    username: process.env.DEFAULT_USERNAME || 'admin',
+    passwordHash: process.env.DEFAULT_PASSWORD_HASH || '$2b$10$RD.54eT3qd8EAbTQLnRh.OwUut0CPClFb493raH/ZrQLeSeTeVepO'
   }
 ];
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
 
 app.post('/api/login', async (req, res) => {
   const { username, password } = req.body;
