@@ -1,0 +1,91 @@
+{
+  "project_id": "claude-code-remote",
+  "project_name": "Claude Code Remote Control",
+  "last_updated": "2025-08-03T10:00:00Z",
+  "overall_progress": 5,
+  "phase": "planning",
+  "health": "on-track",
+  "summary": {
+    "total_tasks": 0,
+    "completed_tasks": 0,
+    "in_progress_tasks": 0,
+    "blocked_tasks": 0,
+    "backlog_tasks": 0
+  },
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "プロジェクト基盤構築",
+      "due_date": "2025-08-10",
+      "progress": 20,
+      "status": "in-progress",
+      "tasks": []
+    },
+    {
+      "id": "M2",
+      "name": "MVP開発完了",
+      "due_date": "2025-09-01",
+      "progress": 0,
+      "status": "not-started",
+      "tasks": []
+    },
+    {
+      "id": "M3",
+      "name": "セキュリティ強化",
+      "due_date": "2025-09-15",
+      "progress": 0,
+      "status": "not-started",
+      "tasks": []
+    },
+    {
+      "id": "M4",
+      "name": "本番リリース",
+      "due_date": "2025-10-01",
+      "progress": 0,
+      "status": "not-started",
+      "tasks": []
+    }
+  ],
+  "current_sprint": {
+    "number": 1,
+    "start_date": "2025-08-05",
+    "end_date": "2025-08-19",
+    "goal": "プロジェクト基盤の確立とバックエンド基本実装",
+    "capacity": 40,
+    "committed": 0,
+    "completed": 0
+  },
+  "risks": [
+    {
+      "id": "RISK-001",
+      "description": "iPhone Safari互換性の問題",
+      "severity": "medium",
+      "probability": "medium",
+      "mitigation": "早期のプロトタイプテスト",
+      "status": "identified",
+      "owner": "frontend-team"
+    }
+  ],
+  "team_metrics": {
+    "velocity": {
+      "current": 0,
+      "average": 0,
+      "trend": "stable"
+    },
+    "quality": {
+      "code_coverage": 0,
+      "bug_rate": 0,
+      "technical_debt": 0
+    }
+  },
+  "dependencies": {
+    "external": [
+      {
+        "name": "Claude Code API",
+        "status": "available",
+        "notes": "ローカル環境での動作確認必要"
+      }
+    ],
+    "internal": []
+  }
+}

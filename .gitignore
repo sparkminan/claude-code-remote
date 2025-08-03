@@ -1,0 +1,49 @@
+node_modules/
+dist/
+build/
+*.log
+.env.local
+.DS_Store
+
+# SSL証明書
+server.cert
+server.key
+server.pfx
+*.pem
+
+# ログファイル
+logs/
+*.log
+
+# PM2
+.pm2/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# 環境設定
+.env
+.env.production
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# 一時ファイル
+*.tmp
+*.temp
+.cache/

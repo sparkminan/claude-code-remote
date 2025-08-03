@@ -1,0 +1,28 @@
+{
+  "name": "claude-code-remote-server",
+  "version": "1.0.0",
+  "description": "Remote control server for Claude Code on Windows",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:https": "node index-https.js",
+    "dev": "nodemon index.js",
+    "dev:https": "nodemon index-https.js",
+    "generate-cert": "powershell -ExecutionPolicy Bypass -File generate-cert.ps1"
+  },
+  "keywords": ["claude-code", "remote-control", "websocket"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.16.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "child_process": "^1.0.2",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
