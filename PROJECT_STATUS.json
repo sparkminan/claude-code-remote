@@ -1,25 +1,29 @@
 {
   "project_id": "claude-code-remote",
   "project_name": "Claude Code Remote Control",
-  "last_updated": "2025-08-03T10:00:00Z",
-  "overall_progress": 5,
-  "phase": "planning",
+  "last_updated": "2025-08-03T15:30:00Z",
+  "overall_progress": 40,
+  "phase": "development",
   "health": "on-track",
   "summary": {
-    "total_tasks": 0,
-    "completed_tasks": 0,
-    "in_progress_tasks": 0,
+    "total_tasks": 10,
+    "completed_tasks": 6,
+    "in_progress_tasks": 1,
     "blocked_tasks": 0,
-    "backlog_tasks": 0
+    "backlog_tasks": 3
   },
   "milestones": [
     {
       "id": "M1",
       "name": "プロジェクト基盤構築",
       "due_date": "2025-08-10",
-      "progress": 20,
+      "progress": 75,
       "status": "in-progress",
-      "tasks": []
+      "tasks": [
+        "HTTPS/WSS実装完了",
+        "文字エンコーディング対応完了",
+        "開発環境整備完了"
+      ]
     },
     {
       "id": "M2",
